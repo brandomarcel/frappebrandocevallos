@@ -1,0 +1,122 @@
+{
+ "autoname": "field:nombre",
+ "creation": "2021-11-23 16:05:08.899279",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cedula",
+  "nombre",
+  "fecha_nac",
+  "telefono",
+  "vivienda",
+  "direccions",
+  "actividad",
+  "estado_civil",
+  "datos_del_c\u00f3nyuge_section",
+  "nombre_conyuge",
+  "cedula_conyuge",
+  "fecha_nac_conyuge",
+  "trabajo_conyuge"
+ ],
+ "fields": [
+  {
+   "fieldname": "cedula",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cedula",
+   "length": 10,
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "Nombre",
+   "unique": 1
+  },
+  {
+   "fieldname": "fecha_nac",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha de Nacimiento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono"
+  },
+  {
+   "fieldname": "vivienda",
+   "fieldtype": "Select",
+   "label": "Vivienda",
+   "options": "PROPIA\nARRENDADA\nDE FAMILIARES"
+  },
+  {
+   "fieldname": "direccions",
+   "fieldtype": "Geolocation",
+   "label": "Direcci\u00f3n"
+  },
+  {
+   "fieldname": "actividad",
+   "fieldtype": "Data",
+   "label": "Actividad Econ\u00f3mica"
+  },
+  {
+   "fieldname": "estado_civil",
+   "fieldtype": "Select",
+   "label": "Estado Civil",
+   "options": "SOLTERO\nCASADO\nVIUDO\nDIVORCIADO"
+  },
+  {
+   "fieldname": "datos_del_c\u00f3nyuge_section",
+   "fieldtype": "Section Break",
+   "label": "DATOS DEL C\u00d3NYUGE"
+  },
+  {
+   "fieldname": "nombre_conyuge",
+   "fieldtype": "Data",
+   "label": "Nombre"
+  },
+  {
+   "fieldname": "cedula_conyuge",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cedula",
+   "length": 10,
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_nac_conyuge",
+   "fieldtype": "Date",
+   "label": "Fecha de Nacimiento"
+  },
+  {
+   "fieldname": "trabajo_conyuge",
+   "fieldtype": "Data",
+   "label": "Trabajo"
+  }
+ ],
+ "modified": "2021-11-23 20:15:39.321138",
+ "modified_by": "Administrator",
+ "module": "mi primera app",
+ "name": "garantes",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

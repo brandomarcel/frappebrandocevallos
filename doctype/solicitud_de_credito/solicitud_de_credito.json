@@ -1,0 +1,113 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2021-11-23 16:09:40.031591",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fecha",
+  "solicitante",
+  "actividad",
+  "asesor",
+  "monto",
+  "producto_credito",
+  "agencia",
+  "cuotas",
+  "total_activo",
+  "total_pasivo",
+  "capital",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "solicitante",
+   "fieldtype": "Link",
+   "label": "Solicitante",
+   "options": "socios"
+  },
+  {
+   "fetch_from": "solicitante.actividad",
+   "fieldname": "actividad",
+   "fieldtype": "Data",
+   "label": "Actividad"
+  },
+  {
+   "fieldname": "asesor",
+   "fieldtype": "Data",
+   "label": "Asesor Comercial"
+  },
+  {
+   "fieldname": "monto",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "MONTO SOLICITADO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "producto_credito",
+   "fieldtype": "Select",
+   "label": "Producto de Cr\u00e9dito",
+   "options": "MICROCR\u00c9DITO\nCONSUMO\nVIVIENDA"
+  },
+  {
+   "fieldname": "agencia",
+   "fieldtype": "Select",
+   "label": "Agencia",
+   "options": "AMBATO\nLATACUNGA\nQUITO\nLOJA\nLA MANA"
+  },
+  {
+   "fieldname": "cuotas",
+   "fieldtype": "Data",
+   "label": "#Cuotas"
+  },
+  {
+   "fieldname": "total_activo",
+   "fieldtype": "Currency",
+   "label": "Total Activo"
+  },
+  {
+   "fieldname": "total_pasivo",
+   "fieldtype": "Currency",
+   "label": "Total Pasivo"
+  },
+  {
+   "fieldname": "capital",
+   "fieldtype": "Currency",
+   "label": "Capital"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "codigo",
+   "options": "Solicitud-"
+  }
+ ],
+ "modified": "2021-11-23 23:25:52.977478",
+ "modified_by": "Administrator",
+ "module": "mi primera app",
+ "name": "solicitud de credito",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

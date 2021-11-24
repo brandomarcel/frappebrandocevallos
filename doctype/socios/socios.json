@@ -1,0 +1,121 @@
+{
+ "autoname": "field:nombre_socio",
+ "creation": "2021-11-23 15:45:55.112947",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cedula",
+  "nombre_socio",
+  "fecha_nacimiento",
+  "telefono",
+  "vivienda",
+  "direccion",
+  "actividad",
+  "estado_civil",
+  "datos_del_c\u00f3nyuge_section",
+  "nombre_conyuge",
+  "cedula_conyuge",
+  "fecha_nac_conyuge",
+  "trabajo_conyuge"
+ ],
+ "fields": [
+  {
+   "fieldname": "cedula",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cedula",
+   "length": 10,
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_nacimiento",
+   "fieldtype": "Date",
+   "label": "Fecha de Nacimiento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Telefono"
+  },
+  {
+   "fieldname": "vivienda",
+   "fieldtype": "Select",
+   "label": "Vivienda",
+   "options": "PROPIA\nARRENDADA\nDE FAMILIARES"
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Geolocation",
+   "label": "Direccion"
+  },
+  {
+   "fieldname": "actividad",
+   "fieldtype": "Data",
+   "label": "Actividad Economica"
+  },
+  {
+   "fieldname": "estado_civil",
+   "fieldtype": "Select",
+   "label": "Estado Civil",
+   "options": "SOLTERO\nCASADO\nVIUDO\nDIVORCIADO"
+  },
+  {
+   "fieldname": "datos_del_c\u00f3nyuge_section",
+   "fieldtype": "Section Break",
+   "label": "DATOS DEL C\u00d3NYUGE"
+  },
+  {
+   "fieldname": "nombre_conyuge",
+   "fieldtype": "Data",
+   "label": "Nombre de C\u00f3nyuge"
+  },
+  {
+   "fieldname": "cedula_conyuge",
+   "fieldtype": "Data",
+   "label": "Cedula",
+   "length": 10,
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_nac_conyuge",
+   "fieldtype": "Date",
+   "label": "Fecha de Nacimiento"
+  },
+  {
+   "fieldname": "trabajo_conyuge",
+   "fieldtype": "Data",
+   "label": "Trabajo del Conyuge"
+  },
+  {
+   "fieldname": "nombre_socio",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre de S\u00f3cio",
+   "unique": 1
+  }
+ ],
+ "modified": "2021-11-23 19:38:22.818802",
+ "modified_by": "Administrator",
+ "module": "mi primera app",
+ "name": "socios",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
